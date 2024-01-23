@@ -392,6 +392,11 @@ h6 {
     font-size: 34px;
     line-height: 1.35;
   }
+  .background-image, [data-bg-src] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right!important;
+}
 }
 
 /* Extra small devices */
