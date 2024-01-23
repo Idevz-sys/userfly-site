@@ -8380,6 +8380,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   overflow: hidden;
   position: relative;
   z-index: 2;
+  width: 250px!important;
 }
 
 .trip-card__img img {
@@ -8518,6 +8519,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  overflow: auto!important;
 }
 
 .trip-tab .indicator {
