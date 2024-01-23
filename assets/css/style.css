@@ -1032,11 +1032,11 @@ textarea.is-invalid {
 }
 
 .ot-menu-wrapper .mobile-logo {
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   padding-top: 40px;
   display: block;
-  text-align: center;
-  background-color: rgba(28, 185, 200, 0.1);
+  text-align: start;
+  width: 85%;
 }
 
 .ot-menu-wrapper .mobile-logo svg {
@@ -1829,7 +1829,7 @@ textarea.is-invalid {
   font-size: 20px;
   font-weight: 700;
   color: var(--theme-color);
-  font-family: var(--style-font);
+  font-family: var(--body-font);
   text-transform: capitalize;
   margin-top: -0.2em;
   margin-bottom: 25px;
