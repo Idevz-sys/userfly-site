@@ -183,6 +183,9 @@ th {
   border: 1px solid var(--border-color);
   padding: 9px 12px;
 }
+.h-50px{
+  height: 50px!important;
+}
 
 a {
   color: var(--theme-color);
@@ -6760,6 +6763,9 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   gap: 15px;
   max-width: 295px;
 }
+.about-media_icon{
+  width: 20%;
+}
 
 .about-media-wrap {
   display: -webkit-box;
@@ -6860,6 +6866,9 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+  .about-media_icon{
+    width: 100%;
   }
 }
 
