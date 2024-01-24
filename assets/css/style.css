@@ -258,6 +258,16 @@ span a {
   line-height: inherit;
 }
 
+#drop{
+  height: 20px;
+}
+
+ .list {
+  height: 200px;
+  overflow: auto !important;
+
+}
+
 .h1,
 h1,
 .h2,

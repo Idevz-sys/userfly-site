@@ -26,6 +26,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
     <!--==============================
 	    All CSS File
@@ -40,6 +41,8 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+
 
 </head>
 
@@ -217,35 +220,129 @@ Hero Area
         <div class="container">
             <div class="search-box">
                 <form action="mail.php" method="POST" class="tour-search">
-                    <div class="form-group">
+                    <div id="drop" class="form-group">
                         <select name="destination" id="destinationSelect" class="form-select nice-select">
-                            <option value="" disabled="disabled" selected="selected" hidden>ORIGEM</option>
-                            <option value="Switzerland">Switzerland</option>
-                            <option value="Barcelona">Barcelona</option>
-                            <option value="Amsterdam">Amsterdam</option>
-                            <option value="Budapest City">Budapest City</option>
+                            <option value=""  disabled="disabled" selected="selected" hidden>ORIGEM</option>
+                     <div id="drop">
+                         
+                                    <option value="Afeganistão">Afeganistão</option>
+                                    <option value="África do Sul">África do Sul</option>
+                                    <option value="Albânia">Albânia</option>
+                                    <option value="Alemanha">Alemanha</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Antígua e Barbuda">Antígua e Barbuda</option>
+                                    <option value="Arábia Saudita">Arábia Saudita</option>
+                                    <option value="Argélia">Argélia</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armênia">Armênia</option>
+                                    <option value="Austrália">Austrália</option>
+                                    <option value="Áustria">Áustria</option>
+                                    <option value="Azerbaijão">Azerbaijão</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrein">Bahrein</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus (Bielorrússia)</option>
+                                    <option value="Bélgica">Bélgica</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bolívia">Bolívia</option>
+                                    <option value="Bósnia e Herzegovina">Bósnia e Herzegovina</option>
+                                    <option value="Botsuana">Botsuana</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="Brunei">Brunei</option>
+                                    <option value="Bulgária">Bulgária</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Butão">Butão</option>
+                                    <option value="Cabo Verde">Cabo Verde</option>
+                                    <option value="Camarões">Camarões</option>
+                                    <option value="Camboja">Camboja</option>
+                                    <option value="Canadá">Canadá</option>
+                                    <option value="Catar">Catar</option>
+                                    <option value="Cazaquistão">Cazaquistão</option>
+                                    <option value="Chade">Chade</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Chipre">Chipre</option>
+                                    <option value="Colômbia">Colômbia</option>
+                                    <option value="Comores">Comores</option>
+                                    <option value="Coreia do Norte">Coreia do Norte</option>
+                                    <option value="Coreia do Sul">Coreia do Sul</option>
+                                    <option value="Costa do Marfim">Costa do Marfim</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Croácia">Croácia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Dinamarca">Dinamarca</option>
+                     </div>
+                                <!-- Adicione mais opções conforme necessário -->
+                              
+                              
                         </select>
                         <i class="fas fa-location-dot"></i>
                     </div>
                     <div class="form-group">
                         <select name="destination" id="tourType" class="form-select nice-select">
                             <option value="" disabled="disabled" selected="selected" hidden>DESTINO</option>
-                            <option value="Switzerland">Switzerland</option>
-                            <option value="Barcelona">Barcelona</option>
-                            <option value="Amsterdam">Amsterdam</option>
-                            <option value="Budapest City">Budapest City</option>
+                            <option value="Afeganistão">Afeganistão</option>
+                                <option value="África do Sul">África do Sul</option>
+                                <option value="Albânia">Albânia</option>
+                                <option value="Alemanha">Alemanha</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Antígua e Barbuda">Antígua e Barbuda</option>
+                                <option value="Arábia Saudita">Arábia Saudita</option>
+                                <option value="Argélia">Argélia</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armênia">Armênia</option>
+                                <option value="Austrália">Austrália</option>
+                                <option value="Áustria">Áustria</option>
+                                <option value="Azerbaijão">Azerbaijão</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrein">Bahrein</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus (Bielorrússia)</option>
+                                <option value="Bélgica">Bélgica</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bolívia">Bolívia</option>
+                                <option value="Bósnia e Herzegovina">Bósnia e Herzegovina</option>
+                                <option value="Botsuana">Botsuana</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Brunei">Brunei</option>
+                                <option value="Bulgária">Bulgária</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Butão">Butão</option>
+                                <option value="Cabo Verde">Cabo Verde</option>
+                                <option value="Camarões">Camarões</option>
+                                <option value="Camboja">Camboja</option>
+                                <option value="Canadá">Canadá</option>
+                                <option value="Catar">Catar</option>
+                                <option value="Cazaquistão">Cazaquistão</option>
+                                <option value="Chade">Chade</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Chipre">Chipre</option>
+                                <option value="Colômbia">Colômbia</option>
+                                <option value="Comores">Comores</option>
+                                <option value="Coreia do Norte">Coreia do Norte</option>
+                                <option value="Coreia do Sul">Coreia do Sul</option>
+                                <option value="Costa do Marfim">Costa do Marfim</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croácia">Croácia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Dinamarca">Dinamarca</option>
                         </select>
                         <i class="fas fa-person-hiking"></i>
                     </div>
                     <div class="form-group">
-                        <select name="destination" id="durationselect" class="form-select nice-select">
-                            <option value="" disabled="disabled" selected="selected" hidden>DATA</option>
-                            <option value="0 - 3 Days">0 - 3 Days</option>
-                            <option value="0 - 7 Days">0 - 7 Days</option>
-                            <option value="3 - 8 Days">3 - 8 Days</option>
-                            <option value="7 - 12 Days">7 - 12 Days</option>
-                        </select>
-                        <i class="fas fa-calendar-days"></i>
+                        <input class="form-select" type="text"  placeholder="Data de ida" id="datepicker">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-select" type="text" placeholder="Data de volta" id="datepicker2">
                     </div>
                     <div class="form-group">
                         <select name="destination" id="budgetSelect" class="form-select nice-select">
@@ -253,7 +350,10 @@ Hero Area
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
+                            <option value="4">5</option>
+                            <option value="4">6</option>
+                            <option value="4">7</option>
+                            <option value="4">8</option>
                         </select>
                         <i class="far fa-user"></i>
                     </div>
@@ -1205,6 +1305,41 @@ Testimonial Area
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
+    <script  src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://raw.githubusercontent.com/jquery/jquery-ui/main/ui/i18n/datepicker-pt-BR.js"></script>
+
+    <script>
+   
+
+
+      $(function () {
+ $("#datepicker").datepicker({
+   dateFormat: 'dd/mm/yy',
+   dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+   dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+   dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+   monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+   monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+   nextText: 'Próximo',
+   prevText: 'Anterior'
+ });
+});
+
+$(function () {
+ $("#datepicker2").datepicker({
+   dateFormat: 'dd/mm/yy',
+   dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+   dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+   dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+   monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+   monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+   nextText: 'Próximo',
+   prevText: 'Anterior'
+ });
+});
+      </script>
+      
+      
     
 
 </body>
