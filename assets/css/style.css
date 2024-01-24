@@ -119,7 +119,18 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
-
+#ui-datepicker-div{
+  background: rgb(255, 255, 255)!important;
+  border: 1px solid rgb(0, 0, 0)!important;
+  border-radius: 20px!important;
+  padding: 10px!important;
+}
+.ui-datepicker-prev{
+  margin-right: 10px!important;
+}
+input[type="number"]{
+  background-image: none!important;
+}
 iframe {
   border: none;
   width: 100%;
