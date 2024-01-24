@@ -5986,7 +5986,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 }
 
 /* Hero 1 ---------------------------------- */
-.hero-1 .ot-hero-bg:before {
+/* .hero-1 .ot-hero-bg:before {
   content: '';
   height: 100%;
   width: 62%;
@@ -5995,7 +5995,7 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 
 .hero-style1 {
   position: relative;
