@@ -395,7 +395,7 @@ h6 {
   .background-image, [data-bg-src] {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom right!important;
+    background-position: center center;
 }
 }
 
@@ -6005,8 +6005,13 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 }
 
 .hero-style1 .hero-text {
-  color: var(--title-color);
+  color: #fff;
 }
+
+.hero-style1 .hero-title {
+  color: #fff;
+}
+
 
 /* Large devices */
 @media (max-width: 1199px) {
@@ -6030,6 +6035,12 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
 @media (max-width: 575px) {
   .hero-1 .ot-hero-bg:before {
     width: 100%;
+  }
+  .hero-style1 .hero-text {
+    color: #000;
+  }
+  .hero-style1 .hero-title {
+    color: #000;
   }
 }
 
