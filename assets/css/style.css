@@ -420,7 +420,7 @@ h6 {
   .background-image, [data-bg-src] {
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: right!important;
   }
   .mt-sm-200{
     margin-top: 200px;
