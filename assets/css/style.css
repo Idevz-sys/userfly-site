@@ -131,6 +131,10 @@ body {
 input[type="number"]{
   background-image: none!important;
 }
+
+.input-bg-none{
+  background-image: none!important;
+}
 iframe {
   border: none;
   width: 100%;
@@ -1144,7 +1148,7 @@ textarea.is-invalid {
   padding: 12px 0;
   line-height: 1.4;
   font-size: 16px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--title-color);
   padding-left: 18px;
 }
@@ -6902,10 +6906,15 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   .img-box1 {
     margin-right: 0;
   }
+  .about-media{
+    display: flex;
+    flex-direction: column;
+  }
   .about-media-wrap {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            justify-content: center;
   }
   .about-media_icon{
     width: 100%;
