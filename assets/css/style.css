@@ -9003,6 +9003,26 @@ ul.comment-list .ot-comment-item:first-child > .ot-post-comment {
   opacity: 1;
 }
 
+.tour-offer__text_2 {
+  color: var(--white-color);
+  margin-bottom: -0.5em;
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.tour-offer:hover .tour-offer__text_2 {
+  border-top: 1px dashed #687179;
+  padding-top: 24px;
+  margin-top: 25px;
+  max-height: 350px;
+  opacity: 1;
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Large devices */
 @media (max-width: 1199px) {
   .tour-offer__content {
